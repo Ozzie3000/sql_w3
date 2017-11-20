@@ -133,6 +133,8 @@
 				Find everyone but people in postal code 44444
 				SELECT * FROM Customers WHERE PostalCode <> 44444;
 
+				Find people made after the 5th entry into DB
+				SELECT * FRMO Customer WHERE CutomerID > 5;
 				
 			</textarea>
 		</div>
