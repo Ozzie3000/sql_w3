@@ -126,6 +126,9 @@
 			<textarea id="stuff">
 				Find people fromt he UK
 				SELECT * FROM Customers WHERE Country = "United Kingdom";
+
+				Find people in the zip code 44444
+				SELECT * FROM Customers WHERE PostalCode = 44444;
 			</textarea>
 		</div>
 
