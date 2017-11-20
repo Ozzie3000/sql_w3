@@ -124,6 +124,11 @@
 
 				How many different cities
 				SELECT COUNT(DISTINCT City) AS total_unique_cities FROM Customers;
+
+				MS Access and the example  + Firefox or MS Edge
+				does not support COUNT(Distinct columnname)
+				If you need to use MS Access DBS
+				SELECT Count(*) AS DistinctCountries FROM (SELECT DISTINCT Country FROM Customers);
 			</textarea>
 		</div>
 
