@@ -146,7 +146,13 @@
 				SELECT * FROM Customer WHERE CutomerID <= 6;
 
 				Find clients with ids between 3-5 inclusive
-				SELECT * FROM Customers WHERE CustomerID BETWEEN 3 AND 5; 
+				SELECT * FROM Customers WHERE CustomerID BETWEEN 3 AND 5;
+
+				Find some guy named beard
+				SELECT * FROM Customers WHERE CustomerName LIKE "%beard%";
+
+				Find these postal codes 54321, 55555, 98765
+				SELECT * FROM Customers WHERE PostalCode IN (54321, 55555, 98765);
 			</textarea>
 		</div>
 
