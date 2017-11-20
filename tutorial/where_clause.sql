@@ -144,6 +144,9 @@
 
 				Find people made on or before the 6th entry into DB
 				SELECT * FROM Customer WHERE CutomerID <= 6;
+
+				Find clients with ids between 3-5 inclusive
+				SELECT * FROM Customers WHERE CustomerID BETWEEN 3 AND 5; 
 			</textarea>
 		</div>
 
