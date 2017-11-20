@@ -134,8 +134,16 @@
 				SELECT * FROM Customers WHERE PostalCode <> 44444;
 
 				Find people made after the 5th entry into DB
-				SELECT * FRMO Customer WHERE CutomerID > 5;
-				
+				SELECT * FROM Customer WHERE CutomerID > 5;
+
+				Find entries before 6th entry into DB
+				SELECT * FROM Customers WHERE CustomerID < 6;
+
+				Find people made on or after the 5th entry into DB
+				SELECT * FROM Customer WHERE CutomerID >= 5;
+
+				Find people made on or before the 6th entry into DB
+				SELECT * FROM Customer WHERE CutomerID <= 6;
 			</textarea>
 		</div>
 
