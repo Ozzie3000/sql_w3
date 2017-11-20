@@ -129,6 +129,11 @@
 
 				Find people in the zip code 44444
 				SELECT * FROM Customers WHERE PostalCode = 44444;
+
+				Find everyone but people in postal code 44444
+				SELECT * FROM Customers WHERE PostalCode <> 44444;
+
+				
 			</textarea>
 		</div>
 
