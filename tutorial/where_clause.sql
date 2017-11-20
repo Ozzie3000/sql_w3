@@ -110,13 +110,22 @@
 			  	<td>44444</td>
 			  	<td>United States</td>
 			  </tr>
+			  <tr>
+			  	<td>8</td>
+			  	<td>Blackbeard</td>
+			  	<td></td>
+			  	<td>Bristol</td>
+			  	<td>98765</td>
+			  	<td>United Kingdom</td>
+			  </tr>
 			</table>
 
 			<br>
 
 			<label for="stuff">SQL Statments</label>
 			<textarea id="stuff">
-				
+				Find people fromt he UK
+				SELECT * FROM Customers WHERE Country = "United Kingdom";
 			</textarea>
 		</div>
 
