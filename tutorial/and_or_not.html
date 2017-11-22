@@ -146,6 +146,14 @@
 			  	<td>98765</td>
 			  	<td>United Kingdom</td>
 			  </tr>
+			  <tr>
+			  	<td>9</td>
+			  	<td>William Wallace</td>
+			  	<td></td>
+			  	<td>Edinburgh</td>
+			  	<td>22557</td>
+			  	<td>Scotland</td>
+			  </tr>
 			</table>
 
 			<br>
@@ -154,6 +162,9 @@
 			<textarea id="stuff">
 				AND clause
 				SELECT * FROM Customers WHERE ID > 1 AND Address = "123 Any Street" AND Country = "United States";
+
+				OR clause
+				SELECT * FROM Customers WHERE ID > 8 OR Address = "456 Any Street" OR Country = "United Kingdom";
 			</textarea>
 		</div>
 
