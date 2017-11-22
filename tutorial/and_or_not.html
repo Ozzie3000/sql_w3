@@ -171,6 +171,9 @@
 
 				AND OR together
 				SELECT * FROM Customers WHERE Country = "United States" AND (City = "Bridgeport" OR City = "Albany");
+
+				AND NOT together
+				SELECT * FROM Customers WHERE Country = "United States" AND NOT Address = "123 Any Street";
 			</textarea>
 		</div>
 
