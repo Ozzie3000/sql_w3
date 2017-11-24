@@ -140,6 +140,10 @@
 
 			<label for="stuff">SQL Statments</label>
 			<textarea id="stuff">
+				Order by Country.  
+				SELECT * FROM Customers ORDER BY Country
+
+				
 			</textarea>
 		</div>
 
