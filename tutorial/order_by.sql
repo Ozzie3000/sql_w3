@@ -141,9 +141,10 @@
 			<label for="stuff">SQL Statments</label>
 			<textarea id="stuff">
 				Order by Country.  
-				SELECT * FROM Customers ORDER BY Country
+				SELECT * FROM Customers ORDER BY Country;
 
-				
+				Order by Country with Descending order.  
+				SELECT * FROM Customers ORDER BY Country DESC;
 			</textarea>
 		</div>
 
