@@ -47,6 +47,9 @@
 		<div data-role="main" class="ui-content">
 			<label for="explaination1">ORDER BY keyword</label>
 			<textarea id="stuff1">
+				SELECT column_1, column_2, ...
+				FROM table_name
+				ORDER BY column_1, column_2, ... ASC|DESC;
 			</textarea>
 			<br>
 
