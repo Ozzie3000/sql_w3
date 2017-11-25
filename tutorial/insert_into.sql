@@ -47,6 +47,13 @@
 		<div data-role="main" class="ui-content">
 			<label for="explaination1">INSERT INTO table</label>
 			<textarea id="stuff1">
+				Two varieties
+				First variety
+				INSERT INTO table_name (column1, column2, column3, ...)
+				VALUES (value1, value2, value3, ...);
+
+				
+
 			</textarea>
 			<br>
 
