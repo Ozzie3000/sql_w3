@@ -55,6 +55,10 @@
 				Second option if you are adding values for all the columns of the table, you may omit the column names in the SQL query. Be extra sure the order of the values is in the same order as the columns in the table
 				INSERT INTO table_name
 				VALUES (value1, value2, value3, ...)
+
+				What if I want to create a record, but I only have 3 out of 6? Fine
+				INSERT INTO table_name (column1, column2, column3)
+				VALUES (value1, value2, value3);
 			</textarea>
 			<br>
 
