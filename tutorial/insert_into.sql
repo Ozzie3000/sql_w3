@@ -145,6 +145,8 @@
 
 			<label for="stuff">SQL Statments</label>
 			<textarea id="stuff">
+				INSERT INTO Customers (CustomerName, Address, City, PostalCode, Country)
+				VALUES ('Ice Man', 'Skagen 21', 'Angermanland', '4006', 'Sweeden');
 			</textarea>
 		</div>
 
