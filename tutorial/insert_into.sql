@@ -147,6 +147,9 @@
 			<textarea id="stuff">
 				INSERT INTO Customers (CustomerName, Address, City, PostalCode, Country)
 				VALUES ('Ice Man', 'Skagen 21', 'Angermanland', '4006', 'Sweeden');
+
+				INSERT INTO Customers (CustomerName, Address, City, PostalCode, Country)
+				VALUES ('Mr Frost', 'Skagen 123', 'Oslo', '4001', 'Norway');
 			</textarea>
 		</div>
 
