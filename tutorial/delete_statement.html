@@ -47,6 +47,7 @@
 		<div data-role="main" class="ui-content">
 			<label for="explaination1">DELETE syntax </label>
 			<textarea id="stuff1">
+				DELETE is used to modify existing records in a table.  The reason I say modify and not Delete is beause some database actually do a bit of trickery.  They set some other field IsDeleted equal to true to retain the data.  Later when you query the DB there are hidden filters that get added like IsDelete &lt;&gt; true.  That way it is effectively deleted, but not really (sneaky).
 			</textarea>
 			<br>
 
