@@ -59,6 +59,13 @@
 				FROM table_name
 				WHERE condition
 				LIMIT number;
+
+				Oracle syntax pre 12c R1:
+				SELECT column_name1, column_name2, ...
+				FROM table_name
+				WHERE ROWNUM <= number;
+
+				As of Oracle 12.1 OFFSET and ROWS FECTH 
 			</textarea>
 			<br>
 
