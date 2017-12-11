@@ -159,9 +159,13 @@
 
 			<label for="stuff">SQL Statments</label>
 			<textarea id="stuff">
-				Count people in DB
+				Count people in DB 
 				Should return 9
 				SELECT COUNT(CustomerID) FROM Customers;
+
+				Count inactive clients
+				Should return 0
+				SELECT COUNT(CustomerID) FROM Customers WHERE Acitve IS "false";
 			</textarea>
 		</div>
 
