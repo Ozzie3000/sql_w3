@@ -45,8 +45,7 @@
 
 
 		<div data-role="main" class="ui-content">
-			<label for="explaination1">LIKE operator syntax</label>
-			<textarea id="stuff1">
+			<div>
 				<ul>
 					<li>The LIKE operator is used after a WHERE clause.</li>
 					<li>It is used to search for a pattern in a column.</li>
@@ -55,9 +54,9 @@
 					<li>_ the underscore represents a single character</li>
 					<li>Now get wild and make some combos!</li>
 				</ul>
-
-				<br>
-
+			</div>
+			<label for="explaination1">LIKE operator syntax</label>
+			<textarea id="stuff1">
 				SELECT column1, column2, ...
 				FROM table_name
 				WHERE some_column LIKE pattern;
@@ -169,8 +168,14 @@
 
 			<br>
 
-			<label for="stuff">SQL Statments</label>
-			<textarea id="stuff">
+			<label for="stuff2">Examples</label>
+		  <ul id="stuff2" type="square">
+				<li>LIKE = 'a%' means starts with a followed by 0 or more characters</li>
+			</ul>
+
+			<label for="stuff3">SQL Statments</label>
+			<textarea id="stuff3">
+				
 			</textarea>
 		</div>
 
