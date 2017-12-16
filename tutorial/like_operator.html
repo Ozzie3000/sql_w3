@@ -170,12 +170,12 @@
 
 			<label for="stuff2">Examples</label>
 		  <ul id="stuff2" type="square">
-				<li>LIKE = 'a%' means starts with a followed by 0 or more characters</li>
-				<li>LIKE = '%a' means starts with 0 or more characters and then followed by a or end in a if 1 or more characters up front.</li>
-				<li>LIKE = '%what%' means contains 'what'</li>
-				<li>LIKE = 'what' means find 'what'</li>
-				<li>LIKE = '_a%' means a is the 2nd character followed by 0 or more characters</li>
-				<li>LIKE = 'a_%_%' means starts with a andhas at least 3 character total.</li>
+				<li>LIKE 'a%' means starts with a followed by 0 or more characters</li>
+				<li>LIKE '%a' means starts with 0 or more characters and then followed by a or end in a if 1 or more characters up front.</li>
+				<li>LIKE '%what%' means contains 'what'</li>
+				<li>LIKE 'what' means find 'what'</li>
+				<li>LIKE '_a%' means a is the 2nd character followed by 0 or more characters</li>
+				<li>LIKE 'a_%_%' means starts with a andhas at least 3 character total.</li>
 			</ul>
 
 			<label for="stuff3">SQL Statments</label>
@@ -188,6 +188,9 @@
 
 				Find customers that have mill somewhere in their name
 				SELECT * FROM Customers WHERE CustomerName LIKE '%mill%';
+
+				Find customers that L in the 2nd spot in their name
+				SELECT * FROM Customers WHERE CustomerName LIKE '_L%';
 			</textarea>
 		</div>
 
