@@ -193,12 +193,16 @@
 				SELECT * FROM Customers WHERE City LIKE 'A_s%';
 
 				MS Access
-				find clients in cities that start with one of these letters
-				SELECT * FROM Customers WHERE City LIKE '[a,b,c]';
+				find clients in cities that starts with one of these letters
+				SELECT * FROM Customers WHERE City LIKE '[a,b,c]%';
 
 				MS Access
 				same as above but a range
-				SELECT * FROM Customers WHERE City LIKE '[a-c]'; 
+				SELECT * FROM Customers WHERE City LIKE '[a-c]%';
+
+				MS Access
+				same as above but the negation
+				SELECT * FROM Customers WHERE City LIKE '[!a-c]%';
 			</textarea>
 		</div>
 
