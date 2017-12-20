@@ -194,7 +194,7 @@
 
 				MS Access
 				find clients in cities that starts with one of these letters
-				SELECT * FROM Customers WHERE City LIKE '[a,b,c]%';
+				SELECT * FROM Customers WHERE City LIKE '[abc]%';
 
 				MS Access
 				same as above but a range
@@ -203,6 +203,10 @@
 				MS Access
 				same as above but the negation
 				SELECT * FROM Customers WHERE City LIKE '[!a-c]%';
+
+				MS Access
+				same as above with the normal negation
+				SELECT * FROM Customers WHERE City NOT LIKE '[a-c]%';
 			</textarea>
 		</div>
 
