@@ -58,6 +58,11 @@
 				SELECT column_name, etc
 				FROM table_name
 				WHERE column_name IN (value1, value2, value3);
+
+				with a subquery
+				SELECT column_name, etc
+				FROM table_name
+				WHERE column_name IN (SELECT STATEMENT);
 			</textarea>
 			<br>
 
