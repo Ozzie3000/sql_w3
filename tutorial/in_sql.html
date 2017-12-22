@@ -188,6 +188,9 @@
 
 				Find clients not in a list of countries
 				SELECT * FROM Customers WHERE Country NOT IN ('United States', 'Ireland');
+
+
+				SELECT * FROM Customers WHERE Country IN (SELECT * FROM Customers WHERE Id > 3);
 			</textarea>
 		</div>
 
