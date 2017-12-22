@@ -173,8 +173,8 @@
 
 			<label for="stuff2">Examples</label>
 		  <ul id="stuff2" type="square">
-				<li>Find clients in a list of countries</li>
-				<li></li>
+				<li>Find clients IN a list of countries</li>
+				<li>Find clients NOT IN a list of countries</li>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -185,6 +185,9 @@
 			<textarea id="stuff3">
 				Find clients in a list of countries
 				SELECT * FROM Customers WHERE Country IN ('United States', 'Ireland');
+
+				Find clients not in a list of countries
+				SELECT * FROM Customers WHERE Country NOT IN ('United States', 'Ireland');
 			</textarea>
 		</div>
 
