@@ -190,6 +190,9 @@
 
 				if you want a space in the alias name square brackets
 				SELECT CustomerID as id, CustomerName AS [person name] FROM Customers;
+
+				make a new alias by combining other columns
+				SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS [Long Address] FROM Customers;
 			</textarea>
 		</div>
 
