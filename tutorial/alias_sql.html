@@ -196,6 +196,11 @@
 
 				MySQL version
 				SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Long_Address FROM Customers;
+
+				pretend we have more tables
+				SELECT o.orderid, c.CustomerName, o.ordernum
+				FROM Customers AS c, Orders AS o
+				WHERE c.CustomerID = 4 AND c.CustomerID = o.CustomerId;
 			</textarea>
 		</div>
 
