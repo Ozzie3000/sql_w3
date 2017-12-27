@@ -193,6 +193,9 @@
 
 				make a new alias by combining other columns
 				SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS [Long Address] FROM Customers;
+
+				MySQL version
+				SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Long_Address FROM Customers;
 			</textarea>
 		</div>
 
