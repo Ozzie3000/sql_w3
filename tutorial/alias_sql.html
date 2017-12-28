@@ -201,6 +201,11 @@
 				SELECT o.orderid, c.CustomerName, o.ordernum
 				FROM Customers AS c, Orders AS o
 				WHERE c.CustomerID = 4 AND c.CustomerID = o.CustomerId;
+
+				pretend we have more tables no alias example
+				SELECT Orders.orderid, Customers.CustomerName, Orders.ordernum
+				FROM Customers, Orders
+				WHERE Customers.CustomerID = 4 AND Customers.CustomerID = Orders.CustomerId;
 			</textarea>
 		</div>
 
