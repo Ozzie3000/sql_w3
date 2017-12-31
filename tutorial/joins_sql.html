@@ -191,7 +191,11 @@
 				FROM Orders
 				INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 
-
+				same table
+				SELECT Customers.Id, Customers.name, Customers.Country, Customersb.Id, Customersb.name
+				FROM Customers
+				JOIN Customersb 
+				ON Customers.CustomerID = Customersb.CustomerID;
 			</textarea>
 		</div>
 
