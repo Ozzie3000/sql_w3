@@ -69,6 +69,7 @@
 			    <th>Country</th>
 			    <th>Age</th>
 			    <th>Active</th>
+			    <th>BuddyId</th>
 			  </tr>
 			  <tr>
 			  	<td>1</td>
@@ -79,6 +80,7 @@
 			  	<td>United States</td>
 			  	<td>true</td>
 			  	<td>56</td>
+			  	<td>2</td>
 			  </tr>
 			  <tr>
 			  	<td>2</td>
@@ -89,6 +91,7 @@
 			  	<td>United States</td>
 			  	<td>true</td>
 			  	<td>48</td>
+			  	<td>3</td>
 			  </tr>
 			  <tr>
 			  	<td>3</td>
@@ -99,6 +102,7 @@
 			  	<td>United States</td>
 			  	<td>true</td>
 			  	<td>42</td>
+			  	<td>4</td>
 			  </tr>
 			  <tr>
 			  	<td>4</td>
@@ -109,6 +113,7 @@
 			  	<td>United States</td>
 			  	<td>true</td>
 			  	<td>30</td>
+			  	<td>5</td>
 			  </tr>
 			  <tr>
 			  	<td>5</td>
@@ -119,6 +124,7 @@
 			  	<td>United States</td>
 			  	<td>true</td>
 			  	<td>55</td>
+			  	<td>6</td>
 			  </tr>
 			  <tr>
 			  	<td>6</td>
@@ -129,6 +135,7 @@
 			  	<td>United States</td>
 			  	<td>true</td>
 			  	<td>70</td>
+			  	<td>7</td>
 			  </tr>
 			  <tr>
 			  	<td>7</td>
@@ -139,6 +146,7 @@
 			  	<td>United States</td>
 			  	<td>true</td>
 			  	<td>39</td>
+			  	<td>8</td>
 			  </tr>
 			  <tr>
 			  	<td>8</td>
@@ -149,6 +157,7 @@
 			  	<td>United Kingdom</td>
 			  	<td>true</td>
 			  	<td>35</td>
+			  	<td>9</td>
 			  </tr>
 			  <tr>
 			  	<td>9</td>
@@ -159,6 +168,7 @@
 			  	<td>Scotland</td>
 			  	<td>true</td>
 			  	<td>35</td>
+			  	<td>1</td>
 			  </tr>
 			</table>
 
@@ -180,6 +190,8 @@
 				SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
 				FROM Orders
 				INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+
 			</textarea>
 		</div>
 
