@@ -187,6 +187,11 @@
 
 			<label for="stuff3">SQL Statments</label>
 			<textarea id="stuff3">
+				same table
+				SELECT Customers.Id, Customers.name, Customers.Country, Customersb.Id, Customersb.name
+				FROM Customers
+				JOIN Customersb 
+				ON Customers.CustomerID = Customersb.BuddyId;
 			</textarea>
 		</div>
 
