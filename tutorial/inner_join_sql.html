@@ -192,6 +192,11 @@
 				FROM Customers
 				JOIN Customersb 
 				ON Customers.CustomerID = Customersb.BuddyId;
+
+				different table. pretend we have 2
+				SELECT Orders.OrderID, Customers.CustomerName
+				FROM Orders
+				INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId;
 			</textarea>
 		</div>
 
