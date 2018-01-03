@@ -49,7 +49,7 @@
 				<ul>
 					<li>Left join returns all records from the first table and the matched records from the right</li>
 					<li>In some databases LEFT JOIN is called LEFT OUTER JOIN</li>
-					<li>The results that are empty  from the right side are NULL</li>
+					<li>The results that are empty from the right side are NULL</li>
 				</ul>
 			</div>
 			<label for="explaination1">SQL left joins syntax</label>
@@ -187,6 +187,9 @@
 
 			<label for="stuff3">SQL Statments</label>
 			<textarea id="stuff3">
+				SELECT Customer.CustomerName, Orders.OrderId
+				FROM Customers
+				LEFT JOIN Orders ON Customers.CustomerId = Orders.CustomerId;
 			</textarea>
 		</div>
 
