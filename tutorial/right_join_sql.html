@@ -177,7 +177,7 @@
 
 			<label for="stuff2">Examples</label>
 		  <ul id="stuff2" type="square">
-				<li></li>
+				<li>Returns the overlap plus the right table</li>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -187,6 +187,9 @@
 
 			<label for="stuff3">SQL Statments</label>
 			<textarea id="stuff3">
+				SELECT Orders.OrderId, Customers.CustomerName
+				FROM Orders
+				RIGHT JOIN Customers ON Orders.CustomerId = Customers.CustomerId;
 			</textarea>
 		</div>
 
