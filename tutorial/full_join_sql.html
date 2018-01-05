@@ -187,6 +187,9 @@
 
 			<label for="stuff3">SQL Statments</label>
 			<textarea id="stuff3">
+				SELECT Customer.CustomerId, Customers.Customername, Orders.OrderId
+				FROM Customers
+				FULL OUTER JOIN Orders ON Orders.CustomerId = Orders.CustomerId; 
 			</textarea>
 		</div>
 
