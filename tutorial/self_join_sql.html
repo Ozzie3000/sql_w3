@@ -186,7 +186,10 @@
 			</ul>
 
 			<label for="stuff3">SQL Statments</label>
-			<textarea id="stuff3"> 
+			<textarea id="stuff3">
+				SELECT t1.CustomerId, t1.CustomerName, t1.BuddyId, t2.CustomerName
+				FROM Customers t1, Customers t2
+				WHERE t1.BuddyId = t2.CustomerId
 			</textarea>
 		</div>
 
