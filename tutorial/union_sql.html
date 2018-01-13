@@ -188,6 +188,11 @@
 
 			<label for="stuff3">SQL Statments</label>
 			<textarea id="stuff3">
+				ALL cities from both tables. Causes dupes
+				SELECT City FROM Customers
+				UNION ALL
+				SELECT City FROM Suppliers
+				ORDER BY City;
 			</textarea>
 		</div>
 
