@@ -200,6 +200,13 @@
 				UNION
 				SELECT City, Country FROM Suppliers
 				WHERE Country='United States'
+
+				UNION all with where clause
+				SELECT City, Country FROM Customers
+				WHERE Country = 'United States'
+				UNION ALL
+				SELECT City, Country FROM Suppliers
+				WHERE Country = 'United States';
 			</textarea>
 		</div>
 
