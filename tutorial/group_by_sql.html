@@ -191,7 +191,11 @@
 			</ul>
 
 			<label for="stuff3">SQL Statments</label>
-			<textarea id="stuff3"> 
+			<textarea id="stuff3">
+			ommit NULL and group by country ascending
+			SELECT COUNT(Customers.CustomerId), Customers.Country;
+			FROM Customers
+			GROUP BY Customers.Country;
 			</textarea>
 		</div>
 
