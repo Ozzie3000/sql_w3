@@ -202,6 +202,11 @@
 			FROM Customers
 			GROUP BY Customers.Country;
 			ORDER BY Customers.Country DESC;
+
+			group by with join
+			SELECT Suppliers.SupplierName, COUNT (Orders.OrderId) AS Num_orders FROM Orders
+			JOIN Suppliers ON Orders.SupplierId = Supplier.SupplierId
+			GROUP BY Suppliers.SupplierName;
 			</textarea>
 		</div>
 
