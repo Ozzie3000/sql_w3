@@ -196,6 +196,12 @@
 			SELECT COUNT(Customers.CustomerId), Customers.Country;
 			FROM Customers
 			GROUP BY Customers.Country;
+
+			ommit NULL and group by country descending order
+			SELECT COUNT(Customers.CustomerId), Customers.Country;
+			FROM Customers
+			GROUP BY Customers.Country;
+			ORDER BY Customers.Country DESC;
 			</textarea>
 		</div>
 
