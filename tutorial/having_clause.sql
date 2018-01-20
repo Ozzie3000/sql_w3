@@ -47,7 +47,7 @@
 		<div data-role="main" class="ui-content">
 			<div>
 				<ul>
-					<li></li>
+					<li>The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions</li>
 					<li></li>
 					<li></li>
 				</ul>
