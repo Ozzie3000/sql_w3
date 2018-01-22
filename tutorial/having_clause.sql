@@ -189,7 +189,12 @@
 			</ul>
 
 			<label for="stuff3">SQL Statments</label>
-			<textarea id="stuff3"> 
+			<textarea id="stuff3">
+				Show countries with 3 or more customers
+				SELECT COUNT(CustomerId) AS total_from_country, Country
+				FROM Customers
+				GROUP BY Country
+				HAVING COUNT(CustomerId) > 3;
 			</textarea>
 		</div>
 
