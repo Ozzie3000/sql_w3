@@ -195,6 +195,12 @@
 				FROM Customers
 				GROUP BY Country
 				HAVING COUNT(CustomerId) > 3;
+
+				SELECT COUNT(CustomerId) AS country_count, Country
+				FROM Customers
+				GROUP BY Country
+				HAVING COUNT(CustomerId) > 2;
+				ORDER BY Count(CustomerId) DESC;
 			</textarea>
 		</div>
 
