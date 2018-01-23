@@ -201,6 +201,20 @@
 				GROUP BY Country
 				HAVING COUNT(CustomerId) > 2;
 				ORDER BY Count(CustomerId) DESC;
+
+				having with joins
+				SELECT Customers.CustomerName, Count (Orders.OrderId) AS NumOrders
+				FROM (Orders INNER JOIN Customers ON Orders.CustomerId = Customer.CustomerId)
+				GROUP BY LastName
+				HAVING COUNT()
+
+
+				SELECT Customers.LastName, COUNT(Orders.OrderID) AS NumberOfOrders
+				FROM Orders
+				INNER JOIN Customers ON Orders.CustomerId = Customers.CustomerId
+				WHERE Country LIKE '%United States%'
+				GROUP BY Country
+				HAVING COUNT(Country) > 1;
 			</textarea>
 		</div>
 
