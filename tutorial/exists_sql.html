@@ -191,6 +191,10 @@
 				SELECT CustomerName
 				FROM Customers
 				WHERE EXISTS (SELECT CustomerName FROM Customers WHERE Age > 3);
+
+				SELECT CustomerName
+				FROM Customers
+				WHERE EXISTS (SELECT CustomerName FROM Customers WHERE Age < 65);
 			</textarea>
 		</div>
 
