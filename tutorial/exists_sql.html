@@ -187,7 +187,10 @@
 			</ul>
 
 			<label for="stuff3">SQL Statments</label>
-			<textarea id="stuff3"> 
+			<textarea id="stuff3">
+				SELECT CustomerName
+				FROM Customers
+				WHERE EXISTS (SELECT CustomerName FROM Customers WHERE Age > 3);
 			</textarea>
 		</div>
 
