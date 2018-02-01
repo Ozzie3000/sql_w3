@@ -188,7 +188,10 @@
 			</ul>
 
 			<label for="stuff3">SQL Statments</label>
-			<textarea id="stuff3"> 
+			<textarea id="stuff3">
+				SELECT CustomerName
+				FROM Customers
+				WHERE CustomerID = ANY (SELECT CustomerID FROM OrderDetails WHERE Quantity = 1);
 			</textarea>
 		</div>
 
