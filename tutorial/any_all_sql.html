@@ -192,6 +192,10 @@
 				SELECT CustomerName
 				FROM Customers
 				WHERE CustomerID = ANY (SELECT CustomerID FROM OrderDetails WHERE Quantity = 1);
+
+				SELECT CustomerName
+				FROM Customers
+				WHERE CustomerID = ANY (SELECT CustomerID FROM OrderDetails WHERE Quantity > 1);
 			</textarea>
 		</div>
 
