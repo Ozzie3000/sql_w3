@@ -200,6 +200,10 @@
 				SELECT CustomerName
 				FROM Customers
 				WHERE CustomerID = ALL (SELECT CustomerID FROM OrderDetails WHERE Quantity = 3);
+
+				SELECT CustomerName
+				FROM Customers
+				WHERE CustomerID = ALL (SELECT CustomerID FROM OrderDetails WHERE Quantity > 3);
 			</textarea>
 		</div>
 
