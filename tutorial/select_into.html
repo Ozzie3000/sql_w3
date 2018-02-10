@@ -198,6 +198,10 @@
 				back up customer db
 				SELECT * INTO CustomersDBBackup2018
 				FROM Customers;
+
+				 IN clause to copy the table into a new table in another database
+				 SELECT * INTO CustomerDBBackup2018 IN 'Backupdbs.mdb'
+				 FROM Customers;
 			</textarea>
 		</div>
 
