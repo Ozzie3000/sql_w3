@@ -206,6 +206,11 @@
 				only some columns
 				SELECT column1, column2 INTO CustomersDBBackup2018
 				FROM Customers;
+
+				all columns with WHERE clause
+				SELECT * INTO EspanaDB
+				FROM Customers
+				WHERE Country = 'Spain';
 			</textarea>
 		</div>
 
