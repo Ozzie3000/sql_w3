@@ -246,6 +246,11 @@
 				SELECT * INTO miaeDB
 				FROM Customers
 				WHERE Active = 'false';
+
+				all columns with WHERE clause
+				SELECT * INTO activeDB
+				FROM Customers
+				WHERE BuddyId IS NOT NULL;
 			</textarea>
 		</div>
 
