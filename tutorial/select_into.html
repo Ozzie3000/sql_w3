@@ -270,7 +270,17 @@
 				all columns with WHERE clause
 				SELECT * INTO milDB
 				FROM Customers
-				WHERE Coty LIKE '%ft %';
+				WHERE City LIKE '%ft %';
+
+				all columns with WHERE clause
+				SELECT * INTO newmembersDB
+				FROM Customers
+				WHERE Id > 5;
+
+				all columns with WHERE clause
+				SELECT * INTO existingmembersbackupDB
+				FROM Customers
+				WHERE Id < 6;
 			</textarea>
 		</div>
 
