@@ -52,6 +52,10 @@
 				WHERE condition;
 
 				/*copy some columns*/
+				INSERT INTO table_2 (column1, column2, column3, ...)
+				SELECT column1, column2, column3, ...
+				FROM table_1
+				WHERE condition;
 			</textarea>
 			<br>
 
