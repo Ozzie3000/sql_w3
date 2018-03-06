@@ -189,21 +189,8 @@
 
 			<label for="stuff3">SQL Statments</label>
 			<textarea id="stuff3">
-				SELECT CustomerName
-				FROM Customers
-				WHERE CustomerID = ANY (SELECT CustomerID FROM OrderDetails WHERE Quantity = 1);
-
-				SELECT CustomerName
-				FROM Customers
-				WHERE CustomerID = ANY (SELECT CustomerID FROM OrderDetails WHERE Quantity > 1);
-
-				SELECT CustomerName
-				FROM Customers
-				WHERE CustomerID = ALL (SELECT CustomerID FROM OrderDetails WHERE Quantity = 3);
-
-				SELECT CustomerName
-				FROM Customers
-				WHERE CustomerID = ALL (SELECT CustomerID FROM OrderDetails WHERE Quantity > 3);
+				INSERT INTO Customers (CustomerName, City, Country)
+				SELECT pirateName, City, Country FROM Pirates;
 			</textarea>
 		</div>
 
