@@ -195,6 +195,11 @@
 
 				INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
 				SELECT PirateName, ContactName, Address, City, PostalCode, Country FROM Pirates;
+
+				/*scottish*/
+				INSERT INTO Customers (CustomerName, City, Country)
+				SELECT PirateName, City, Country FROM Pirates
+				WHERE Country='Scotland';
 			</textarea>
 		</div>
 
