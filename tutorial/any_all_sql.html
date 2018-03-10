@@ -204,7 +204,12 @@
 				/*British invasion*/
 				INSERT INTO Customers (CustomerName, City, Country)
 				SELECT PirateName, City, Country FROM Pirates
-				WHERE Country='United Kingdown';
+				WHERE Country = 'United Kingdown';
+
+				/*Ams*/
+				INSERT INTO Customers (CustomerName, City, Country)
+				SELECT PirateName, City, Country FROM Pirates
+				WHERE Country = 'United States';
 			</textarea>
 		</div>
 
