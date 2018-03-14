@@ -209,6 +209,10 @@
 			<textarea id="stuff3">
 				INSERT INTO Customers (CustomerName, City, Country)
 				SELECT SailorName, City, Country FROM Sailors;
+
+				INSERT INTO Pirates (PirateName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true;
 			</textarea>
 		</div>
 
