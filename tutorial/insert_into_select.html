@@ -221,6 +221,10 @@
 				INSERT INTO Actors (ActorName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, handlerId FROM Customers
 				WHERE Active = true;
+
+				INSERT INTO Bosses (BossName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, handlerId FROM Customers
+				WHERE Active = true;
 			</textarea>
 		</div>
 
