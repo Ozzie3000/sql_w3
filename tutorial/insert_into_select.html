@@ -229,6 +229,10 @@
 				INSERT INTO Employees (EmployeeName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, handlerId FROM Customers
 				WHERE Active = true AND CustomerName = "David Ten";
+
+				INSERT INTO Presidents (PresidentName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, buddyId FROM Customers
+				WHERE Active = true AND CustomerName = "Abraham Lincoln";
 			</textarea>
 		</div>
 
