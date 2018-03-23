@@ -245,6 +245,10 @@
 				INSERT INTO Volunteers (VolunteerName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, buddyId FROM Customers
 				WHERE Active = true AND Country = 'United States';
+
+				INSERT INTO Students (StudentName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, buddyId FROM Customers
+				WHERE Active = true AND Country = 'United States';
 			</textarea>
 		</div>
 
