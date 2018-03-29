@@ -269,6 +269,10 @@
 				INSERT INTO Racers (RacerName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, buddyId FROM Customers
 				WHERE Active = true AND Country = 'United States' AND Age > 21;
+
+				INSERT INTO Owners (OwnerName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, buddyId FROM Customers
+				WHERE Active = true AND Country = 'United States' AND Age > 65;
 			</textarea>
 		</div>
 
