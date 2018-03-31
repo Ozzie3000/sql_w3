@@ -273,6 +273,10 @@
 				INSERT INTO Owners (OwnerName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, buddyId FROM Customers
 				WHERE Active = true AND Country = 'United States' AND Age > 65;
+
+				INSERT INTO Dectives (DectiveName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, buddyId FROM Customers
+				WHERE Active = true AND Country = 'United States' AND Age > 21;
 			</textarea>
 		</div>
 
