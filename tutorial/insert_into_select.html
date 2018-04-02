@@ -285,6 +285,10 @@
 				INSERT INTO LLs (LLName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, buddyId FROM Customers
 				WHERE Active = true AND Country = 'United States' AND Age < 16;
+
+				INSERT INTO Stars (StarName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, buddyId FROM Customers
+				WHERE Active = true AND Country = 'United States' AND Age >17 AND BuddyId ISNOT NULL;
 			</textarea>
 		</div>
 
