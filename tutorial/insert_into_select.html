@@ -306,6 +306,10 @@
 				INSERT INTO Soldiers (SoldierName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, buddyId FROM Customers
 				WHERE Active = true AND Country = 'United States' AND Age > 18;
+
+				INSERT INTO Parents (ParentName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Parent = true;
 			</textarea>
 		</div>
 
