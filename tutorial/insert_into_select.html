@@ -70,6 +70,7 @@
 			    <th>Age</th>
 			    <th>Active</th>
 			    <th>BuddyId</th>
+			    <th>Parent</th>
 			  </tr>
 			  <tr>
 			  	<td>1</td>
@@ -81,6 +82,7 @@
 			  	<td>true</td>
 			  	<td>56</td>
 			  	<td>2</td>
+			  	<td>true</td>
 			  </tr>
 			  <tr>
 			  	<td>2</td>
@@ -92,6 +94,7 @@
 			  	<td>true</td>
 			  	<td>48</td>
 			  	<td>3</td>
+			  	<td>true</td>
 			  </tr>
 			  <tr>
 			  	<td>3</td>
@@ -103,6 +106,7 @@
 			  	<td>true</td>
 			  	<td>42</td>
 			  	<td>4</td>
+			  	<td>false</td>
 			  </tr>
 			  <tr>
 			  	<td>4</td>
@@ -114,6 +118,7 @@
 			  	<td>true</td>
 			  	<td>30</td>
 			  	<td>5</td>
+			  	<td>true</td>
 			  </tr>
 			  <tr>
 			  	<td>5</td>
@@ -125,6 +130,7 @@
 			  	<td>true</td>
 			  	<td>55</td>
 			  	<td>6</td>
+			  	<td>true</td>
 			  </tr>
 			  <tr>
 			  	<td>6</td>
@@ -136,6 +142,7 @@
 			  	<td>true</td>
 			  	<td>70</td>
 			  	<td>7</td>
+			  	<td>false</td>
 			  </tr>
 			  <tr>
 			  	<td>7</td>
@@ -147,6 +154,7 @@
 			  	<td>true</td>
 			  	<td>39</td>
 			  	<td>8</td>
+			  	<td>false</td>
 			  </tr>
 			  <tr>
 			  	<td>8</td>
@@ -158,6 +166,7 @@
 			  	<td>true</td>
 			  	<td>35</td>
 			  	<td>9</td>
+			  	<td>false</td>
 			  </tr>
 			  <tr>
 			  	<td>9</td>
@@ -169,7 +178,9 @@
 			  	<td>true</td>
 			  	<td>35</td>
 			  	<td>1</td>
-			  </tr><tr>
+			  	<td>true</td>
+			  </tr>
+			  <tr>
 			  	<td>10</td>
 			  	<td>David Ten</td>
 			  	<td>123 water way</td>
@@ -179,6 +190,7 @@
 			  	<td>true</td>
 			  	<td>30</td>
 			  	<td>1</td>
+			  	<td>false</td>
 			  </tr>
 			  </tr><tr>
 			  	<td>11</td>
@@ -190,6 +202,7 @@
 			  	<td>true</td>
 			  	<td>23</td>
 			  	<td>1</td>
+			  	<td>true</td>
 			  </tr>
 			</table>
 
@@ -289,6 +302,10 @@
 				INSERT INTO Stars (StarName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, buddyId FROM Customers
 				WHERE Active = true AND Country = 'United States' AND Age >17 AND BuddyId ISNOT NULL;
+
+				INSERT INTO Soldiers (SoldierName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, buddyId FROM Customers
+				WHERE Active = true AND Country = 'United States' AND Age > 18;
 			</textarea>
 		</div>
 
