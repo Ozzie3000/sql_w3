@@ -318,6 +318,10 @@
 				INSERT INTO Runners (RunnerName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true;
+
+				INSERT INTO Joggers (JoggerName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = false;
 			</textarea>
 		</div>
 
