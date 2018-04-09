@@ -330,6 +330,10 @@
 				INSERT INTO Guilders (GuilderName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = active;
+
+				INSERT INTO Raiders (RaiderName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = active;
 			</textarea>
 		</div>
 
