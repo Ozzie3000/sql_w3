@@ -329,23 +329,27 @@
 
 				INSERT INTO Guilders (GuilderName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
-				WHERE Active = active;
+				WHERE Active = true;
 
 				INSERT INTO Raiders (RaiderName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
-				WHERE Active = active;
+				WHERE Active = true;
 
 				INSERT INTO Bears (BearName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
-				WHERE Active = active;
+				WHERE Active = true;
 
 				INSERT INTO Dinos (DinoName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
-				WHERE Active = active;
+				WHERE Active = true;
 
 				INSERT INTO Kolonels (KolonelName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
-				WHERE Active = active;
+				WHERE Active = true;
+
+				INSERT INTO Recruits (RecruitName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 17;
 			</textarea>
 		</div>
 
