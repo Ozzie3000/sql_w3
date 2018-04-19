@@ -366,6 +366,10 @@
 				INSERT INTO Shero (SheroName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 17 AND Country = 'United States';
+
+				INSERT INTO Avatars (AvatarName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 15 AND Country = 'United States';
 			</textarea>
 		</div>
 
