@@ -382,6 +382,10 @@
 				INSERT INTO Ptosss (PtossName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 35 AND Country = 'United States';
+
+				INSERT INTO Zergs (ZergName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 21 AND Country = 'United States';
 			</textarea>
 		</div>
 
