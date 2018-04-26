@@ -394,6 +394,10 @@
 				INSERT INTO SunSpears (SunSpearName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 21 AND Country = 'United States';
+
+				INSERT INTO Tullys (TullyName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 21 AND Country = 'United States';
 			</textarea>
 		</div>
 
