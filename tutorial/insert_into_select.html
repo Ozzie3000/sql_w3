@@ -466,6 +466,10 @@
 				INSERT INTO WhiteSoxs (WhiteSoxName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 17 AND Country = 'United States';
+
+				INSERT INTO Indianss (IndianName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 17 AND Country = 'United States';
 			</textarea>
 		</div>
 
