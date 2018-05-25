@@ -514,6 +514,14 @@
 				INSERT INTO Phillies (PhillieName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 17 AND Country = 'United States';
+
+				INSERT INTO Phillies (PhillieName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 17 AND Country = 'United States';
+
+				INSERT INTO Nationals (NationalName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 17 AND Country = 'United States';
 			</textarea>
 		</div>
 
