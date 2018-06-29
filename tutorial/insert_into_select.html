@@ -666,6 +666,10 @@
 				INSERT INTO Siberians (SiberianName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 17 AND Country = 'United States';
+
+				INSERT INTO Saints (SaintName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 17 AND Country = 'United States';
 			</textarea>
 		</div>
 
