@@ -678,6 +678,10 @@
 				INSERT INTO Ministers (MinisterName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 17 AND Country = 'United States';
+
+				INSERT INTO Associates (AssociateName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 20 AND Country = 'United States';
 			</textarea>
 		</div>
 
