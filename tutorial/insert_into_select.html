@@ -690,6 +690,10 @@
 				INSERT INTO Freedomfighters (FreedomfighterName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 17 AND Country = 'United States';
+
+				INSERT INTO Pats (PatName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 17 AND Country = 'United States';
 			</textarea>
 		</div>
 
