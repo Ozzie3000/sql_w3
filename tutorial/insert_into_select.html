@@ -706,6 +706,10 @@
 				INSERT INTO Ranchers (RancherName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 17 AND Country = 'United States';
+
+				INSERT INTO Farmers (FarmerName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 17 AND Country = 'United States';
 			</textarea>
 		</div>
 
