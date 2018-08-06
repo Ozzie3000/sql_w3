@@ -826,6 +826,10 @@
 				INSERT INTO Dires (DireName, City, Country, BuddyId)
 				SELECT CustomerName, City, Country, BuddyId FROM Customers
 				WHERE Active = true AND Age > 17 AND Country = 'United States'
+
+				INSERT INTO Hotos (HotoName, City, Country, BuddyId)
+				SELECT CustomerName, City, Country, BuddyId FROM Customers
+				WHERE Active = true AND Age > 17 AND Country = 'United States'
 			</textarea>
 		</div>
 
